@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F O R M</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h2>REGISTRATION</h2>
+        <form action="#" id="form">
+            <div class="form-first">
+                <div class="details personal">
+                    <span class="title"> personal Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="fullname">Full Name :</label>
+                            <input type="text" placeholder="Enter your name" id="username">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="dateofbirth">date of birth :</label>
+                            <input type="date" placeholder="Enter your DOB" id="dateofbirth" required>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="email">Email :</label>
+                            <input type="email" placeholder="Enter your Email" id="email">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="mobile number">mobile number :</label>
+                            <input type="number" placeholder="Enter mobile number" id="phnumber" >
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="gender">Gender :
+                                <input type="radio" name="male">   Male
+                                <input type="radio" name="male">   Female
+                                <input type="radio" name="male">   Thired gender
+                            </label>
+                            
+
+                        
+                            <p id="dis"></p>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label for="occupation">occupation :</label>
+                            <input type="text" placeholder="Enter your Occupation" id="occupation" >
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details id">
+                    <span class="title"> Identity Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label for="idtype">Id type :</label>
+                            <input type="text" placeholder="Enter your id type"  id="idtype">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="idnumber">id number :</label>
+                            <input type="number" placeholder="Enter your id number" id="idnum">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="authority">Issued Authority :</label>
+                            <input type="text" placeholder="Enter the issued authority" id="authority">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="issued state">Issued state :</label>
+                            <input type="text" placeholder="Enter issued state" id="state" >
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="Issueddate">Isssued date :</label>
+                            <input type="date" placeholder="Enter issued date" id="issuedate" required>
+                            <div class="error"></div>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label for="expirydate">expiry date :</label>
+                            <input type="date" placeholder="Enter expirydate" id="expirydate" required>
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

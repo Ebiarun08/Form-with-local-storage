@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4070f4 !important;
+}
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.container h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+.container h2::after{
+    content: "";
+    position: absolute;
+    background-color: #4070f4;
+    height: 8px;
+    width: 50px;
+    left: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.details  span{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(61, 60, 60);
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 8px;
+}
+form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+}
+.container form .details {
+    margin-top: 10px;
+} 
+form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+display: flex;
+flex-direction: column;
+width: calc(100% / 3 - 10px);
+}
+form .input-field label{
+   font-size: 14px;
+   text-transform: capitalize;
+
+}
+#dis{
+    color: red;
+    font-size: 12px;
+}
+form .input-field input{
+    height: 42px;
+    margin: 8px 0;
+    padding: 0 15px;
+    border: 1px solid #aaa;
+    outline: none;
+    border-radius: 5px;
+}
+form .input-field input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #4070f4;
+    border-radius: 5px;
+    margin-top: 25px;
+    transition: all 0.3s linear;
+
+}
+form button:hover{
+    background-color: #265df2;
+}
+.input-field.success input {
+    border-color: #09c372;
+}
+
+.input-field.error input {
+    border-color: #ff3860;
+}
+
+.input-field .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+    .containerform{
+        overflow-y: scroll;
+    }
+    .container form::-webkit-scrollbar{
+        display: none;
+    }
+}
+@media (max-width:576px){
+    form .fields .input-field{
+        width: 100%;
+    } 
+}
